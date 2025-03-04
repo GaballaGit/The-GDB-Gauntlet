@@ -3,10 +3,11 @@
 Welcome to The GDB Gauntlet! Test your GDB knowledge with some practice files!
 
 How to get started:
-`
-cd into a directory
 
-chmod +x r.sh
+`cd into a directory`
 
-./r.sh
-`
+`chmod +x r.sh`
+
+`./r.sh`
+
+
