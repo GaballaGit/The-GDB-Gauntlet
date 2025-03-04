@@ -10,4 +10,9 @@ How to get started:
 
 `./r.sh`
 
+In GDB:
+
+`b break_spot`
+
+
 
