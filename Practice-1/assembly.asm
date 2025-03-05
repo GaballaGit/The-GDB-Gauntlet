@@ -12,8 +12,9 @@ extern printf
 
 section .data
 
-    welcome     db "Welocme to student's, can you use gdb to find:", 10, "1. Where the studentGPAs are located?", 10, "2. What are the first 4 student's GPA?", 10, "3. What is the address of the first index of busSeats?", 10, 0
-    studentGPAs dq  3.0, 4.0, 3.6, 2.9, 3.4, 3.8, 3.0, 2.6, 2.8, 3.0
+    welcome         db "Welocme to student's, can you use gdb to find:", 10, "1. Where the studentGPAs are located?", 10, "2. What are the first 4 student's GPA?", 10, "3. What is the address of the first index of busSeats?", 10, 0
+    studentGPAs     dq  3.0, 4.0, 3.6, 2.9, 3.4, 3.8, 3.0, 2.6, 2.8, 3.0
+    classTimeSecs   dq 3600, 4200, 2000, 2550, 3500, 2000, 6000
 
 
 ; ====================================== Uninitalized Data ========================================
