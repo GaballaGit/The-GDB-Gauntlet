@@ -130,4 +130,4 @@ Prints out ONLY xmm15's frame v2_double
 
 p/a: prints the value in address form. $rsp is the address of rsp.
 
-x/1fg: 1 is the first element, f is for float, g is for giant since we are dealing with 64 bits.
+x/1fg: 1 is the first element, f is for float, g is for giant since we are dealing with 64 bits. $rsp to get element at rsp.
