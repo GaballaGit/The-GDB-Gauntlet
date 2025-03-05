@@ -12,7 +12,7 @@ How to get started:
 
 In GDB:
 
-`b break_spot`
+`b break_spot (for Practice 3, do b main.cpp:10)`
 
 `r`
 
