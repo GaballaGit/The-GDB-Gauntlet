@@ -4,7 +4,7 @@ Welcome to The GDB Gauntlet! Test your GDB knowledge with some practice files!
 
 How to get started:
 
-`cd into a directory`
+`cd Practice-#`
 
 `chmod +x r.sh`
 
@@ -13,6 +13,8 @@ How to get started:
 In GDB:
 
 `b break_spot`
+
+`r`
 
 
 ---
