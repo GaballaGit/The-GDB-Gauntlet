@@ -126,7 +126,7 @@ Prints out ONLY xmm15's frame v2_double
 
 
 
-3. To locate: p/a $rsp      To get value: x/1fg $rsp (or the address of $rsp)
+3. To locate: p/a $rsp      To get value: x/1fg $rsp
 
 p/a: prints the value in address form. $rsp is the address of rsp.
 
