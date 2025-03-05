@@ -1,0 +1,8 @@
+1. p/a &studentGPAs
+p/a outputs in address form. & returns the address
+
+2. p/f {long[4]}&studentGPAs
+p/f outputs as decimal floating point numbers. Get 4 long numbers at address studentGPAs (This works because we are dealling with 64 bits, double also works, see book page: 9)
+
+3. x/1ag &busSeats
+x/1ag: 1 outputs the first element, a represents address, g represents giant word (64 bits). At the address of busSeats
