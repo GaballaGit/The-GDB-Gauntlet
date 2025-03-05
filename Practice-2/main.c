@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-extern void students();
+extern void math();
 
 int main()
 {
     printf("Welcome to The GDB Gauntlet");
 
-    students();
+    math();
 
     printf("----------------------------------------------------------\n");
 

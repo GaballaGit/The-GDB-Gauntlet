@@ -3,7 +3,7 @@
 
 ; ======================================== Declarations ==========================================
 
-global students
+global math
 
 extern printf
 
@@ -12,9 +12,9 @@ extern printf
 
 section .data
 
-    welcome         db "Welocme to students, can you use gdb to find:", 10, "1. Where the studentGPAs are located?", 10, "2. What are the first 4 student's GPA?", 10, "3. What is the address of the first index of busSeats?", 10, 0
-    studentGPAs     dq  3.0, 4.0, 3.6, 2.9, 3.4, 3.8, 3.0, 2.6, 2.8, 3.0
-    classTimeSecs   dq 3600, 4200, 2000, 2550, 3500, 2000, 6000
+    welcome         db "Welocme to maths, can you use gdb to find:", 10, "1. The values of xmm15?", 10, "2. The xmm15 value in v2_double?", 10, "3. There is an IEE-64 value pushed to the top of the stack, locate it and get the value.", 10, 0
+    threeSixty      dq 360.0
+    two             dq 2.0
 
 
 ; ====================================== Uninitalized Data ========================================
@@ -23,12 +23,9 @@ section .bss
     mainstorage resb 832
 
 
-    busSeats resq 20
-
-
 ; ============================================ Text ==============================================
 section .text
-students:
+math:
 
 ; ------------------------- Backup Registers -------------------------
     mov rax,7
@@ -62,12 +59,18 @@ students:
     mov     rdi, welcome
     call    printf
 
-    mov     r15, [studentGPAs]
-    mov     r14, busSeats  
+    xorpd   xmm15, xmm15
+    addsd   xmm15, [threeSixty]
+    divsd   xmm15, [two]
+
+    mov     rax, 0x0801D00000000000
+    push    qword 0
+    mov     [rsp], rax
 
 break_spot:
 
-
+    mov     rax, 0
+    pop     rax
 
 ; ------------------------- Restore Registers -------------------------
 
